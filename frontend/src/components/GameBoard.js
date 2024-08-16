@@ -7,6 +7,7 @@ import excitedEddy from "../styles/excited-eddy.svg";
 import excitedLily from "../styles/lily-excited.svg";
 import excitedVikram from "../styles/vikram-excited.svg";
 import excitedZari from "../styles/zari-excited.svg";
+import { BASE_URL } from "../App";
 
 function GameBoard({ cards }) {
   const [selectedCards, setSelectedCards] = useState([]);
@@ -20,7 +21,7 @@ function GameBoard({ cards }) {
   useEffect(() => {
     const loadInitialCards = async () => {
       try {
-        const response = await axios.get("http://127.0.0.1:5000/api/game-data");
+        const response = await axios.get(BASE_URL + "/game-data");
         const { pairs } = response.data;
 
         // Shuffle the pairs array (to make sure every game starts with new pairs, not the same ones every time it starts)
@@ -61,7 +62,7 @@ function GameBoard({ cards }) {
   //Logic for replacing matched cards with new ones
   const loadNewPair = useCallback((firstIndex, secondIndex) => {
     axios
-      .get("http://127.0.0.1:5000/api/game-data")
+      .get(BASE_URL + "/game-data")
       .then((response) => {
         const { pairs } = response.data;
         const newPair = pairs[Math.floor(Math.random() * pairs.length)];

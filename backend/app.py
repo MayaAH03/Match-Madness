@@ -1,10 +1,21 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, send_from_directory
 from flask_cors import CORS
 import json
 import os
 
 app = Flask(__name__)
 CORS(app)
+
+
+frontend_folder = os.path.join(os.getcwd(), "..", 'frontend')
+build_folder = os.path.join(frontend_folder,"build")
+
+@app.route("/", defaults={"filename": ""})
+@app.route("/<path:filename>")
+def index(filename):
+    if not filename:
+        filename = "index.html"
+    return send_from_directory(build_folder, filename)
 
 # Load game data from JSON file
 def load_game_data():

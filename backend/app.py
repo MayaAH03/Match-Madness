@@ -4,7 +4,6 @@ import json
 import os
 
 app = Flask(__name__)
-CORS(app)
 
 
 frontend_folder = os.path.join(os.getcwd(), "..", 'frontend')

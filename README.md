@@ -1,72 +1,100 @@
-# Getting Started with Create React App
+<div align="center">
+  <img  width="auto" height="350"  src="https://i.imgur.com/J6U8STP.png">
+  <img  width="auto" height="350"  src="https://i.imgur.com/A7FikA2.png">
+  <img  width="auto" height="350"  src="https://i.imgur.com/CLYXHGa.png">
+  <img  width="auto" height="350"  src="https://i.imgur.com/rvITgD8.png">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+</div>
 
-## Available Scripts
 
-In the project directory, you can run:
+# Match Madness
+This full-stack matching game is made with Python (Flask) and JavaScript (React) <br />
+**Live Demo:** 
 
-### `npm start`
+## Tech Stack
+**Tech Stack**: JavaScript, React.js, Python, Flask <br />
+**Version Control**: Git, GitHub <br />
+**Deployment**: Render <br />
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
+**Animated UI/UX**: Enhanced user experience with responsive buttons for matching and clicking cards, as well as animated characters with hover effects. <br />
+**Endless Feel**:  When a correct pair is matched, it is replaced with a new random pair from the game data, ensuring continuous and varied gameplay. <br />
+**Dynamic Database**: The game data is stored in a JSON file and is dynamically loaded into the game only when called. <br />
+**Responsive Design:** The app is designed to adapt to various screen sizes, ensuring a consistent experience across devices. <br />
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Potential Areas of Improvement
+**User Authentication:** Ability to create accounts to save progress and high scores.
+**Language Selection:** Add a feature to be able to change the language and offer multiple languages to play with.
+**Online Leaderboard:** Show an online leaderboard with different users' high scores to compare who has the best one.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Run the App Locally
+**Clone the repository:** <br />
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+git clone https://github.com/MayaAH03/Match-Madness
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Navigate to the project directory:** <br />
 
-### `npm run eject`
+```bash
+cd Match-Madness
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Navigate to the backend directory:** <br />
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+cd backend
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**Create a virtual environment:**<br />
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+python -m venv venv
+```
 
-## Learn More
+**Activate the virtual environment:** <br />
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+venv\Scripts\activate
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Install the dependencies:** <br />
 
-### Code Splitting
+```bash
+pip install -r requirements.txt
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+**Navigate to the frontend directory:** <br />
 
-### Analyzing the Bundle Size
+```bash
+cd ../frontend
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+**Install the dependencies:** <br />
 
-### Making a Progressive Web App
+```bash
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+**Build the frontend:** <br />
 
-### Advanced Configuration
+```bash
+npm run build
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+**Navigate to the backend directory:** <br />
 
-### Deployment
+```bash
+cd ../backend
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+**Run the Flask app:** <br />
 
-### `npm run build` fails to minify
+```bash
+flask run
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-<div>Icons made from <a href="https://www.onlinewebfonts.com/icon">svg icons</a>is licensed by CC BY 4.0</div>
+Open your browser and go to http://localhost:5000/ to view the app.

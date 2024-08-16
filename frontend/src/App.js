@@ -3,6 +3,7 @@ import axios from "axios";
 import GameBoard from "./components/GameBoard";
 import happyDuo from "./styles/happy-duo.svg";
 import "./styles/styles.css";
+export const BASE_URL = process.env.REACT_APP_BASE_URL || "/api";
 
 function App() {
   const [gameData, setGameData] = useState([]);
@@ -11,7 +12,7 @@ function App() {
   useEffect(() => {
     // Fetch game data from the backend
     axios
-      .get("http://127.0.0.1:5000/api/game-data")
+      .get(BASE_URL + "/game-data")
       .then((response) => {
         const { pairs } = response.data;
         // Create card list with both English and Spanish words

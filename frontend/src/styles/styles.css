@@ -1,0 +1,144 @@
+@font-face {
+  font-family: "Feather Bold";
+  src: url(../styles/Feather-Bold.ttf) format("truetype");
+  font-weight: normal;
+  font-size: normal;
+}
+
+body {
+  font-family: "Feather Bold";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #151c21;
+}
+
+.App {
+  font-family: "Feather Bold";
+  text-align: center;
+  background-color: #151c21;
+  min-height: 100vh;
+  color: white;
+}
+
+.App h1 {
+  color: #58cc02;
+}
+
+.game-board {
+  font-family: "Feather Bold";
+  display: grid;
+  grid-template-columns: repeat(2, 150px);
+  grid-gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card {
+  font-family: "Feather Bold";
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  border-color: #32393e;
+  border-width: 5px;
+  border-style: solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  transition: background-color 0.5s;
+}
+
+.card.selected {
+  background-color: #1cb0f6;
+  color: white;
+}
+
+.card.matched {
+  background-color: #32cd32;
+  color: white;
+}
+
+.card.mismatched {
+  background-color: #ff4b4b;
+  color: white;
+}
+
+.score,
+.timer {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.instructions {
+  margin-left: 30px;
+  font-size: 30px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.start-button {
+  font-family: "Feather Bold";
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #61dafb;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  transition: transform 0.3s ease;
+}
+
+.start-button:hover {
+  background-color: #21a1f1;
+  transform: scale(1.2);
+}
+
+.game-over {
+  font-family: "Feather Bold";
+  text-align: center;
+  margin-top: 20px;
+  color: #ff4b4b;
+}
+
+.game-over h3 {
+  font-family: "Feather Bold";
+  text-align: center;
+  margin-top: 20px;
+  color: #ffc800;
+}
+
+.Copyright {
+  font-family: "Feather Bold";
+  font-size: smaller;
+  margin-top: 150px;
+  color: white;
+  font-style: italic;
+}
+
+.Copyright a:hover,
+a:active a:visited a:link {
+  color: #1cb0f6;
+}
+
+.happy-duo {
+  margin-bottom: 20px;
+  width: 130px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.happy-duo:hover {
+  transform: scale(1.2);
+}
+
+.excited-duo {
+  margin-bottom: 20px;
+  width: 130px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.excited-duo:hover {
+  transform: scale(1.2);
+}

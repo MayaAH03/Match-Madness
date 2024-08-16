@@ -25,9 +25,9 @@ This full-stack matching game is made with Python (Flask) and JavaScript (React)
 
 
 ## Potential Areas of Improvement
-**User Authentication:** Ability to create accounts to save progress and high scores.
-**Language Selection:** Add a feature to be able to change the language and offer multiple languages to play with.
-**Online Leaderboard:** Show an online leaderboard with different users' high scores to compare who has the best one.
+**User Authentication:** Ability to create accounts to save progress and high scores. <br />
+**Language Selection:** Add a feature to be able to change the language and offer multiple languages to play with. <br />
+**Online Leaderboard:** Show an online leaderboard with different users' high scores to compare who has the best one. <br />
 
 
 ## Run the App Locally

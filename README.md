@@ -1,8 +1,8 @@
 <div align="center">
-  <img  width="auto" height="350"  src="https://i.imgur.com/J6U8STP.png">
-  <img  width="auto" height="350"  src="https://i.imgur.com/A7FikA2.png">
-  <img  width="auto" height="350"  src="https://i.imgur.com/CLYXHGa.png">
-  <img  width="auto" height="350"  src="https://i.imgur.com/rvITgD8.png">
+  <img  width="auto" height="250"  src="https://i.imgur.com/J6U8STP.png">
+  <img  width="auto" height="250"  src="https://i.imgur.com/A7FikA2.png">
+  <img  width="auto" height="250"  src="https://i.imgur.com/CLYXHGa.png">
+  <img  width="auto" height="250"  src="https://i.imgur.com/rvITgD8.png">
 
 </div>
 

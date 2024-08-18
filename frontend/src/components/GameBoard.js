@@ -15,7 +15,7 @@ function GameBoard({ cards }) {
   const [mismatchedCards, setMismatchedCards] = useState([]);
   const [score, setScore] = useState(0);
   const [gameCards, setGameCards] = useState(cards);
-  const [timeLeft, setTimeLeft] = useState(3); // Initial time 105
+  const [timeLeft, setTimeLeft] = useState(105); // Initial time
   const [gameOver, setGameOver] = useState(false); //game over state
 
   useEffect(() => {

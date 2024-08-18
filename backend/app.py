@@ -4,6 +4,7 @@ import json
 import os
 
 app = Flask(__name__)
+CORS(app)  # This will enable CORS for all routes
 
 
 frontend_folder = os.path.join(os.getcwd(), "..", 'frontend')
@@ -14,8 +15,10 @@ build_folder = os.path.join(frontend_folder,"build")
 def index(filename):
     if not filename:
         filename = "index.html"
-    return send_from_directory(build_folder, filename)
-
+    try:
+        return send_from_directory(build_folder, filename)
+    except FileNotFoundError:
+        return "File not found", 404
 # Load game data from JSON file
 def load_game_data():
     #encoding with UTF-8 encoding to handle non-ASCII characters, the letters with accents!!

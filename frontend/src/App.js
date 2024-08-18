@@ -56,6 +56,11 @@ function App() {
       <footer className="Copyright">
         All duo assets used from{" "}
         <a href="https://design.duolingo.com/marketing/assets">here.</a>
+        <br /> Created by: Maya Al Hourani (
+        <a href="https://www.linkedin.com/in/maya-al-hourani/">Linkedin</a>) (
+        <a href="https://github.com/MayaAH03">GitHub</a>)
+        <br />
+        Copyright © 2024 Maya Al Hourani.
       </footer>
     </div>
   );

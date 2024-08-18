@@ -4,8 +4,7 @@ import GameBoard from "./components/GameBoard";
 import happyDuo from "./styles/happy-duo.svg";
 import "./styles/styles.css";
 export const BASE_URL =
-  process.env.REACT_APP_BASE_URL ||
-  "https://match-madness-0pyq.onrender.com/api";
+  process.env.REACT_APP_BASE_URL || "http://127.0.0.1:5000/api";
 
 function App() {
   const [gameData, setGameData] = useState([]);
